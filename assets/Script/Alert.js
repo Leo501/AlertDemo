@@ -1,4 +1,3 @@
-
 cc.Class({
     extends: cc.Component,
 
@@ -17,6 +16,7 @@ cc.Class({
     },
 
     showAlert(option) {
+        console.log('option=', option);
         let content = option['content'] || '';
         let onOkEvent = option['onOk'];
         let needCancel = option['needCancel'] || false;
