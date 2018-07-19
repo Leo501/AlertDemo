@@ -16,7 +16,7 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         this.label.string = this.text;
-
+		console.log("test");
 
     },
 
@@ -24,7 +24,6 @@ cc.Class({
         let alert = cc.instantiate(this.alertPrefab).getComponent('Alert');
         alert.showAlert({
             content: 'hello',
-            needCancel: true,
             onOk: () => {
                 console.log('ok');
             }
